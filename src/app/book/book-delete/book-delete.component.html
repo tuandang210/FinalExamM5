@@ -1,0 +1,22 @@
+<h2>Xóa sách</h2>
+<form [formGroup]="bookForm" (ngSubmit)="deleteBook(id)">
+  <a class="btn btn-primary" routerLink="/">Trở lại</a>
+  <table>
+    <tr>
+      <th>Tên sách</th>
+      <td><input  type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <th>Tác giả</th>
+      <td><input  type="text" formControlName="author"></td>
+    </tr>
+    <tr>
+      <th>Mô tả</th>
+      <td><textarea  type="text" formControlName="description"></textarea></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Xóa</button></td>
+    </tr>
+  </table>
+</form>

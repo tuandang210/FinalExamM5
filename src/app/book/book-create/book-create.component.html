@@ -1,0 +1,22 @@
+<h2>Tạo sản phẩm mới</h2>
+<a class="btn btn-primary" routerLink="/">Trở lại</a>
+<form [formGroup]="bookForm" (ngSubmit)="submit()">
+  <table>
+    <tr>
+      <th>Tiêu đề</th>
+      <td><input type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <th>Tác giả</th>
+      <td><input type="text" formControlName="author"></td>
+    </tr>
+    <tr>
+      <th>Mô tả</th>
+      <td><input type="text" formControlName="description"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Tạo mới</button></td>
+    </tr>
+  </table>
+</form>

@@ -1,0 +1,18 @@
+<h2>Chi tiết sách</h2>
+<form [formGroup]="bookForm">
+  <a class="btn btn-primary" routerLink="/">Trở lại</a>
+  <table>
+    <tr>
+      <th>Tên sách</th>
+      <td><input readonly type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <th>Tác giả</th>
+      <td><input readonly type="text" formControlName="author"></td>
+    </tr>
+    <tr>
+      <th>Mô tả</th>
+      <td><textarea readonly type="text" formControlName="description"></textarea></td>
+    </tr>
+  </table>
+</form>
