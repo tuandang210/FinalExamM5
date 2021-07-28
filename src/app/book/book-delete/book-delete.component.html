@@ -4,19 +4,19 @@
   <table>
     <tr>
       <th>Tên sách</th>
-      <td><input  type="text" formControlName="title"></td>
+      <td><input readonly type="text" formControlName="title"></td>
     </tr>
     <tr>
       <th>Tác giả</th>
-      <td><input  type="text" formControlName="author"></td>
+      <td><input readonly type="text" formControlName="author"></td>
     </tr>
     <tr>
       <th>Mô tả</th>
-      <td><textarea  type="text" formControlName="description"></textarea></td>
+      <td><textarea readonly cols="100" rows="5"  type="text" formControlName="description"></textarea></td>
     </tr>
     <tr>
       <td></td>
-      <td><button>Xóa</button></td>
+      <td><button class="btn btn-success">Xóa</button></td>
     </tr>
   </table>
 </form>
